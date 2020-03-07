@@ -27,7 +27,7 @@ public class EmailCreationTestLambda extends TestBase {
         Comparator<? super EmailData> byId = (g1, g2) -> Integer.compare(Integer.parseInt(g1.getId()), Integer.parseInt(g2.getId()));
         before.sort(byId);
         after.sort(byId);
-
+//
         Assert.assertEquals(before, after);
 
 
